@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 id="course">Course Registration Form</h1>
+    <form action="https://chatgpt.com/" autocomplete="" target="_blank">
+      <div class="personal">
+        <fieldset>
+          <legend>Personal Details</legend>
+          <table>
+            <tr>
+              <td id="f_name"><label for="">first name</label></td>
+              <td>
+                <input
+                  type="text"
+                  required
+                  placeholder="Ex:naveen"
+                  name="first_name"
+                  minlength="3"
+                />
+                <span>enter your firstname</span>
+              </td>
+            </tr>
+
+            <tr>
+              <td id="l_name"><label for="">surname</label></td>
+              <td>
+                <input
+                  type="text"
+                  placeholder="Ex:kumar"
+                  name="last_name"
+                  minlength="1"
+                />
+                <span>enter your surname</span><br />
+              </td>
+            </tr>
+
+            <tr>
+              <td id="mobile_no"><label for="">mobile no</label></td>
+              <td>
+                <input
+                  type="tel"
+                  required
+                  placeholder=""
+                  name="mobile_no"
+                  minlength="10"
+                />
+                <span>entet your mobile no</span>
+                <br />
+              </td>
+            </tr>
+
+            <tr>
+              <td id="email"><label for="">email</label></td>
+              <td>
+                <input type="email" required name="email" minlength="11" /><span
+                  >enter your email</span
+                ><br />
+                <img id="valid" src="tick mark.png" alt="" />
+                <img id="invalid" src="cross mark.png" alt="" />
+              </td>
+            </tr>
+
+            <tr>
+              <td id="password"><label for="">password</label></td>
+              <td>
+                <input type="password" required name="password" minlength="8" />
+                <span>enter your password</span>
+                <br />
+              </td>
+            </tr>
+
+            <tr>
+              <td id="cpassword"><label for="">confirm password</label></td>
+              <td>
+                <input
+                  type="password"
+                  required
+                  name="cpassword"
+                  minlength="8"
+                /><span>confirm your password</span><br />
+              </td>
+            </tr>
+
+            <tr>
+              <td id="DOB"><label for="">DOB</label></td>
+              <td>
+                <input type="date" required name="DOB" />
+                <span>enter your DOB</span><br />
+              </td>
+            </tr>
+
+            <tr>
+              <td id="gender"><label for="">gender</label></td>
+              <td>
+                <input type="radio" name="gender" id="" value="M" /><label
+                  for=""
+                  >Male</label
+                >
+                <input type="radio" name="gender" id="" value="F" /><label
+                  for=""
+                  >female</label
+                >
+                <input type="radio" name="gender" id="" value="O" /><label
+                  for=""
+                  >others</label
+                >
+                <br />
+              </td>
+            </tr>
+
+            <tr>
+              <td id="country"><label for="">country</label></td>
+              <td>
+                <select name="" id="">
+                  <option value="IND">india</option>
+                  <option value="USA">usa</option>
+                  <option value="CHINA">china</option></select
+                ><br />
+              </td>
+            </tr>
+
+            <tr>
+              <td id="u_pic"><label for="">upload picture</label></td>
+              <td><input type="file" /><br /></td>
+            </tr>
+
+            <tr>
+              <td><input type="reset" /></td>
+            </tr>
+          </table>
+        </fieldset>
+      </div>
+
+      <div class="course">
+        <fieldset>
+          <legend>Course Details</legend>
+          <table>
+            <tr>
+              <td><label for="">Select Course</label></td>
+              <td>
+                <select name="" id="">
+                  <option value="P">python</option>
+                  <option value="J">java</option>
+                  <option value="S">sap</option>
+                </select>
+              </td>
+            </tr>
+
+            <tr>
+              <td><label for="">Delivery Mode</label></td>
+              <td>
+                <input type="radio" name="mode" id="" value="M" />online
+                <input type="radio" name="mode" id="" value="F" />offline
+                <br />
+              </td>
+            </tr>
+          </table>
+          <label for="comments">comments</label><br />
+          <textarea
+            name="comments"
+            id="comments"
+            rows="4"
+            cols="30"
+            placeholder="enter any comments here......"
+          >
+          </textarea>
+        </fieldset>
+
+        <tr>
+          <br />
+          <input type="submit" />
+        </tr>
+      </div>
+    </form>
+  </body>
+</html>

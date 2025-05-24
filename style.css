@@ -1,0 +1,91 @@
+* {
+  font-family: "Product Sans", sans-serif;
+  font-family: "Product Sans Thin", sans-serif;
+  font-family: "Product Sans Light", sans-serif;
+  font-family: "Product Sans Medium", sans-serif;
+  font-family: "Product Sans Black", sans-serif;
+}
+body {
+  background-color: antiquewhite;
+}
+form {
+  width: 500px;
+}
+#course {
+  color: red;
+}
+fieldset {
+  border: 2px solid blueviolet;
+}
+legend {
+  color: brown;
+}
+input:required {
+  border: 2px solid red;
+}
+input:optional {
+  border: 2px solid green;
+}
+input:hover {
+  background-color: bisque;
+  color: red;
+}
+input[type="date"] {
+  background-color: coral;
+  cursor: pointer;
+}
+
+input[type="radio"]:checked {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+input[type="radio"]:checked + label {
+  color: green;
+}
+select {
+  background-color: chocolate;
+  cursor: pointer;
+}
+
+input[type="file"] {
+  border-radius: 20px;
+  background-color: chartreuse;
+  cursor: pointer;
+}
+
+input[type="reset"] {
+  border-radius: 20px;
+  background-color: azure;
+}
+
+input[type="submit"] {
+  border: 2pxsolid darkblue;
+  border-radius: 20px;
+  background-color: cadetblue;
+  cursor: pointer;
+}
+/* input:focus {
+  background-color: red;
+} */
+input + span {
+  display: none;
+}
+input:hover + span {
+  display: inline;
+}
+img {
+  display: none;
+}
+
+input[type="email"]:focus:valid ~ img#valid {
+  display: inline;
+  height: 20px;
+  width: 20px;
+}
+
+input[type="email"]:focus:invalid ~ img#invalid {
+  display: inline;
+  height: 20px;
+  width: 20px;
+}
